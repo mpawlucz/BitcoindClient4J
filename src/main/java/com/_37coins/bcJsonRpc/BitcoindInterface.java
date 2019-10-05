@@ -1,16 +1,10 @@
 package com._37coins.bcJsonRpc;
 
+import com._37coins.bcJsonRpc.pojo.*;
+
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
-
-import com._37coins.bcJsonRpc.pojo.Account;
-import com._37coins.bcJsonRpc.pojo.Address;
-import com._37coins.bcJsonRpc.pojo.AddressInformation;
-import com._37coins.bcJsonRpc.pojo.Block;
-import com._37coins.bcJsonRpc.pojo.Info;
-import com._37coins.bcJsonRpc.pojo.LastBlock;
-import com._37coins.bcJsonRpc.pojo.Transaction;
 
 
 
@@ -58,6 +52,8 @@ public interface BitcoindInterface {
 	public long gethashespersec();
 	//Returns an object about the given transaction hash.
 	public Transaction gettransaction(String hash);
+	public String getrawtransaction(String hash);
+	public Map<String, Object> decoderawtransaction(String encodedTransaction);
 	//Returns Object that has account names as keys, account balances as values.
 	public Map<String,BigDecimal> listaccounts(long confirmations);
 	//Returns an array of objects containing:"account" : the account of the receiving addresses,"amount" : total amount received by addresses with this account,"confirmations" : number of confirmations of the most recent transaction included

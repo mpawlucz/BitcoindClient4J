@@ -15,9 +15,9 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>com.googlecode</groupId>
+			<groupId>com.github.briandilley.jsonrpc4j</groupId>
 			<artifactId>jsonrpc4j</artifactId>
-			<version>0.28</version>
+			<version>1.0</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>jackson-core</artifactId>
@@ -51,14 +51,14 @@
 		</dependency>
 	</dependencies>
 
-	<repositories>
-		<repository>
-			<id>jsonrpc4j-webdav-maven-repo</id>
-			<name>jsonrpc4j maven repository</name>
-			<url>http://jsonrpc4j.googlecode.com/svn/maven/repo/</url>
-			<layout>default</layout>
-		</repository>
-	</repositories>
+	<!--<repositories>-->
+		<!--<repository>-->
+			<!--<id>jsonrpc4j-webdav-maven-repo</id>-->
+			<!--<name>jsonrpc4j maven repository</name>-->
+			<!--<url>http://jsonrpc4j.googlecode.com/svn/maven/repo/</url>-->
+			<!--<layout>default</layout>-->
+		<!--</repository>-->
+	<!--</repositories>-->
 
 	<build>
 		<plugins>
